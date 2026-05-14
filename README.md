@@ -24,7 +24,7 @@ No build steps, no dependencies — everything is static. KaTeX is loaded from a
 ## How to Access on GitHub Pages
 
 ```text
-[https://byeSystem32.github.io/jeopardy_judicial-branch/](https://byesystem32.github.io/jeopardy_ap-calc-ab-unit-6/)
+https://byesystem32.github.io/jeopardy_ap-calc-ab-unit-6/
 ```
 
 ## Game Content Overview
