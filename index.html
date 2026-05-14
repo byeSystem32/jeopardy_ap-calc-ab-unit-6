@@ -3,15 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Judicial Branch Jeopardy</title>
+  <title>AP Calculus AB - Unit 6 Jeopardy</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- KaTeX for clean math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="app">
     <header class="top-bar">
       <div class="title-wrap">
-        <h1>Judicial Branch Jeopardy</h1>
-        <p class="subtitle">Review game on the U.S. Judicial Branch &amp; Supreme Court. By Darius Zafar</p>
+        <h1>AP Calculus AB &mdash; Unit 6 Jeopardy</h1>
+        <p class="subtitle">Integration &amp; Accumulation of Change. By Darius Zafar</p>
       </div>
       <div class="score-panel">
         <div class="score-label">Score</div>
@@ -36,11 +41,19 @@
           <li>Use <strong>Show Answer</strong> if you are stuck (no score change).</li>
           <li>When all tiles are used, press <strong>Reset Game</strong> to play again.</li>
         </ul>
+        <h2 style="margin-top: 14px;">Typing Math Answers</h2>
+        <ul>
+          <li>Use <code>^</code> for exponents (e.g., <code>x^2</code>).</li>
+          <li>Use <code>/</code> for fractions (e.g., <code>x^3/3</code> or <code>(1/3)x^3</code>).</li>
+          <li>Write functions as <code>sin(x)</code>, <code>cos(x)</code>, <code>ln(x)</code>, <code>e^x</code>, etc.</li>
+          <li>Include <code>+ C</code> for indefinite integrals (it&rsquo;s also accepted without it).</li>
+          <li>Multiple equivalent forms are accepted (e.g., <code>x^3/3</code> and <code>(1/3)x^3</code>).</li>
+        </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Designed for civics review. Content focuses on the U.S. judicial branch, federal courts, and landmark Supreme Court cases.</p>
+      <p>Designed for AP Calculus AB review. Content focuses on Unit 6: Integration &amp; Accumulation of Change.</p>
     </footer>
   </div>
 
@@ -58,7 +71,7 @@
       <div class="modal-body">
         <p id="modalQuestionText" class="modal-question-text"></p>
         <label for="answerInput" class="answer-label">Your answer:</label>
-        <input id="answerInput" class="answer-input" type="text" autocomplete="off" />
+        <input id="answerInput" class="answer-input" type="text" autocomplete="off" spellcheck="false" />
         <p id="feedbackText" class="feedback-text" aria-live="polite"></p>
       </div>
 

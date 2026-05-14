@@ -307,7 +307,27 @@ body {
 .modal-question-text {
   margin-top: 0;
   font-size: 1.05rem;
-  line-height: 1.5;
+  line-height: 1.6;
+}
+
+/* KaTeX tweaks: allow long expressions to wrap inside narrow modals
+   and keep inline math vertically centered with surrounding text. */
+.modal-question-text .katex,
+.feedback-text .katex {
+  font-size: 1.05em;
+}
+
+.modal-question-text .katex-display,
+.feedback-text .katex-display {
+  margin: 0.4em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2px 0;
+}
+
+.modal-question-text .katex-html,
+.feedback-text .katex-html {
+  white-space: normal;
 }
 
 .answer-label {
@@ -336,8 +356,9 @@ body {
 
 .feedback-text {
   min-height: 22px;
-  font-size: 0.9rem;
-  margin-top: 6px;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  line-height: 1.5;
 }
 
 .feedback-text.correct {
